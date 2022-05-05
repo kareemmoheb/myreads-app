@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getAll, update } from './BooksAPI';
 import BookShelf from './Components/BookShelf';
 import SearchBar from './Components/SearchBar';
+import NotFound from './Components/NotFound';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
@@ -51,6 +52,7 @@ function App() {
                         />
                     }
                 />
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
     );
