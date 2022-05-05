@@ -52,7 +52,7 @@ export default function BookShelf({ userBooks, loading, onChangeShelf }) {
             </div>
             <div className="open-search">
                 <Link to="/search">
-                    <button>Add a book</button>
+                    Add a book
                 </Link>
 
             </div>

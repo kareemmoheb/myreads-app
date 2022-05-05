@@ -36,8 +36,8 @@ export default function SearchBar({ onChangeShelf, currentBooks, loading }) {
         <div className="search-books">
             {loading && <Loading />}
             <div className="search-books-bar">
-                <Link to="/">
-                    <button className="close-search">Close</button>
+                <Link to="/" className="close-search">
+                    Close
                 </Link>
                 <div className="search-books-input-wrapper">
                     {/*
